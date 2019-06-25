@@ -112,7 +112,7 @@ int main(int argc, char **argv)
 		}
 
 err2:
-        munmap(fb0,screensize); /*关闭设备*/
+        munmap(fb0,screensize); /*释放显存*/
 err1:
         close(fd_fb0); /*关闭设备*/
 err0:
